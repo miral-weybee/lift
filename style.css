@@ -1,0 +1,50 @@
+.main{
+    padding: 3vh;
+}
+
+.lift-outer{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.lift-start{
+    height: 73%;
+    width: 80%;
+    background-color: #006266;
+    margin: 5em 0;
+}
+
+.lift-upper{
+    
+    margin: 1em ;
+    height: 66vh;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.lift-lower{
+    background-color: black;
+    margin: 1em;
+    width: 98%;
+}
+.first-lift, .second-lift, .third-lift, .fourth-lift {
+    width: 25%;
+    
+}
+
+.first-lift, .second-lift, .third-lift{
+    background-color: #B1E2FF;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    height: 100%;
+    margin: 0 4em;
+}
