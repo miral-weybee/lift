@@ -1,50 +1,74 @@
-.main{
-    padding: 3vh;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.lift-outer{
+.main-container {
+    margin: auto;
+    width: max-content;
+    height: max-content;
     display: flex;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
+    position: relative;
 }
 
-.lift-start{
-    height: 73%;
-    width: 80%;
-    background-color: #006266;
-    margin: 5em 0;
+.main-container .lift-container,
+.maintenance {
+    background-color: #17db80;
+    position: relative;
+    outline: 1px solid white;
+    width: 200px;
 }
 
-.lift-upper{
-    
-    margin: 1em ;
-    height: 66vh;
-    width: 98%;
+.lift {
+    text-align: center;
+    width: 100px;
+    height: 80px;
+    color: white;
+    background-color: #000000;
+    margin: auto;
+    position: absolute;
+    /* top: 85%; */
+    bottom: 0px;
+    left: 25%;
+    /* transform: translate(-50%, 0%); */
+    transition: .5s;
+}
+
+.blocked {
+    border: 1px solid red;
+    background-color: #415e5e;
+}
+
+.maintenance {
     display: flex;
-    justify-content: center;
-    gap: 2vh;
+    flex-direction: column;
+    align-items: center;
+    /* padding-bottom: 20px; */
 }
 
-.lift-lower{
-    background-color: black;
-    margin: 1em;
-    width: 98%;
-}
-.first-lift, .second-lift, .third-lift, .fourth-lift {
-    width: 25%;
-    
+p {
+    font-size: 25px;
 }
 
-.first-lift, .second-lift, .third-lift{
-    background-color: #B1E2FF;
-}
-
-.container {
+.floor {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: column-reverse;
-    height: 100%;
-    margin: 0 4em;
+    justify-content: space-around;
+    border-top: 1px solid white;
+    height: 100px;
+    width: 200px;
+    color: white;
+}
+
+
+.aeroBtn {
+    font-size: 25px;
+    border-radius: 15%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #183D3D;
+    cursor: pointer;
+    transition: .5s;
 }
